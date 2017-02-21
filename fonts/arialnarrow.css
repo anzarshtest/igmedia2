@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'arialnarrow';
+    src: url('fonts/arialnarrow.eot');
+    src: url('fonts/arialnarrow.eot') format('embedded-opentype'),
+         url('fonts/arialnarrow.woff2') format('woff2'),
+         url('fonts/arialnarrow.woff') format('woff'),
+         url('fonts/arialnarrow.ttf') format('truetype'),
+         url('fonts/arialnarrow.svg#arialnarrow') format('svg');
+}

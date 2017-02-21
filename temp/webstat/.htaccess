@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "/www/ig-media.ru/webstat"
+AuthUserFile /var/www/u2334975/data/etc/40635537.passwd
+DirectoryIndex index.html
+<Limit GET POST>
+	require valid-user
+</Limit>
