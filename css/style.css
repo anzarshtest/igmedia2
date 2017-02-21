@@ -313,7 +313,7 @@ h1 {
   position: relative; }
 
 .az-top::after {
-  content: "╤В╨╛╨┐";
+  content: "топ";
   position: absolute;
   width: 43px;
   height: 43px;
