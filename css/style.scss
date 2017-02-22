@@ -22,6 +22,12 @@ h2{
 	margin: 0;
 	padding: 0;
 }
+.az-td-visible{
+	display: table-cell !important;
+}
+.az-hide{
+	display: none !important;
+}
 .az-center{
 	text-align: center;
 }
@@ -832,7 +838,7 @@ h2{
 
 .toggle-mnu span, .toggle-mnu span:after, .toggle-mnu span:before {
   width: 100%;
-  height: 2px;
+  height: 4px;
   background-color: #666;
   -webkit-transition: all 0.3s;
           transition: all 0.3s;
@@ -1195,7 +1201,7 @@ h2{
 		// font-family: 'arialnarrow';
 		// line-height: 1;
 		// color: #292929;
-		font-size: 22px;
+		// font-size: 22px;
 	}
 	.block1{
 		padding-top: 50px;
@@ -1237,10 +1243,10 @@ h2{
 		margin-right: -15px;
 		width: calc(100% + 30px);
 		th{
-			font-size: 17px;
+			// font-size: 17px;
 		}
 		td{
-			font-size: 16px;
+			// font-size: 16px;
 		}
 		tr:first-child.abs{
 			position: absolute;

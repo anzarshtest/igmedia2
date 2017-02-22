@@ -23,6 +23,12 @@ h2 {
   margin: 0;
   padding: 0; }
 
+.az-td-visible {
+  display: table-cell !important; }
+
+.az-hide {
+  display: none !important; }
+
 .az-center {
   text-align: center; }
 
@@ -314,7 +320,7 @@ h1 {
   position: relative; }
 
 .az-top::after {
-  content: "топ";
+  content: "╤В╨╛╨┐";
   position: absolute;
   width: 43px;
   height: 43px;
@@ -753,7 +759,7 @@ h1 {
 
 .toggle-mnu span, .toggle-mnu span:after, .toggle-mnu span:before {
   width: 100%;
-  height: 2px;
+  height: 4px;
   background-color: #666;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -1049,9 +1055,6 @@ h1 {
 /**/
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  body {
-    font-size: 22px; }
-
   .block1 {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -1083,10 +1086,6 @@ h1 {
     margin-left: -15px;
     margin-right: -15px;
     width: calc(100% + 30px); }
-    .tax-table th {
-      font-size: 17px; }
-    .tax-table td {
-      font-size: 16px; }
     .tax-table tr:first-child.abs {
       position: absolute;
       width: 100%;

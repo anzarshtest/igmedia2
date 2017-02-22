@@ -165,22 +165,23 @@ $(document).ready(function(){
     });
     $(window).resize(function(){
         th_visible = 0;
+        th_active = 1;
         $(".tax-table tr:first-child th").each(function(i){
             if($(this).is(":visible")){
                 th_visible++;
             }
 
         });
-        $(".tax-table tr:first-child th, .tax-table tr td").removeAttr("style");
+        $(".tax-table tr:first-child th, .tax-table tr td").removeClass("az-hide").removeClass("az-td-visible");
     });
 
     $(".table-left").click(function(){
         if(th_active>1){
             $(".tax-table tr").each(function(){
-                $(this).find("td").eq(th_active-1).show();
-                $(this).find("th").eq(th_active-1).show();
-                $(this).find("td").eq(th_active+th_visible-2).hide();
-                $(this).find("th").eq(th_active+th_visible-2).hide();
+                $(this).find("td").eq(th_active-1).removeClass("az-hide").addClass("az-td-visible");//show();
+                $(this).find("th").eq(th_active-1).removeClass("az-hide").addClass("az-td-visible");//show();
+                $(this).find("td").eq(th_active+th_visible-2).addClass("az-hide").removeClass("az-td-visible");//hide();
+                $(this).find("th").eq(th_active+th_visible-2).addClass("az-hide").removeClass("az-td-visible");//hide();
             });
             th_active--;
         }
@@ -190,10 +191,10 @@ $(document).ready(function(){
         if((th_active+th_visible-1)<$(".tax-table tr:first-child th").length){
             
             $(".tax-table tr").each(function(){
-                $(this).find("td").eq(th_active).hide();
-                $(this).find("th").eq(th_active).hide();
-                $(this).find("td").eq(th_active+th_visible-1).show();
-                $(this).find("th").eq(th_active+th_visible-1).show();
+                $(this).find("td").eq(th_active).addClass("az-hide").removeClass("az-td-visible");//.hide();
+                $(this).find("th").eq(th_active).addClass("az-hide").removeClass("az-td-visible");//.hide();
+                $(this).find("td").eq(th_active+th_visible-1).removeClass("az-hide").addClass("az-td-visible");//.show();
+                $(this).find("th").eq(th_active+th_visible-1).removeClass("az-hide").addClass("az-td-visible");//.show();
             });
             th_active++;
         }
