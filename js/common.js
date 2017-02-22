@@ -139,7 +139,7 @@ $(document).ready(function(){
     $(window).scroll(function(){
         var tax = $('#tax').offset().top;
         var tax_table = $('.tax-table').offset().top;
-        if(($(window).scrollTop() > tax && $(window).scrollTop() < (tax + $('.tax').height()))||($('body').scrollTop() > tax && $('body').scrollTop() < (tax + $('.tax').height()))){
+        if(($(window).scrollTop() > tax && $(window).scrollTop() < (tax + $('.tax').height()-100))||($('body').scrollTop() > tax && $('body').scrollTop() < (tax + $('.tax').height()-100))){
             $('.table-left-right').css("top", $(this).scrollTop() - tax);
         }
         if(window.matchMedia( "(max-width: 1200px)" ).matches){

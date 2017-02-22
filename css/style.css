@@ -314,7 +314,7 @@ h1 {
   position: relative; }
 
 .az-top::after {
-  content: "топ";
+  content: "╤В╨╛╨┐";
   position: absolute;
   width: 43px;
   height: 43px;
@@ -833,7 +833,19 @@ h1 {
       margin-top: 17px; }
     .table-left-right a.table-left::before {
       transform: rotate(-135deg);
-      margin-left: 6px; } }
+      margin-left: 6px; }
+
+  .steps {
+    background-size: cover; }
+
+  .az-col {
+    width: 25%; }
+
+  .az-col:last-child, .az-col:nth-last-child(2) {
+    width: 50%; }
+
+  .tech-item-outer {
+    width: 100%; } }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   .menu {
@@ -920,7 +932,33 @@ h1 {
   .tax-table td, .tax-table th {
     width: 30%; }
   .tax-table td:first-child, .tax-table th:first-child {
-    width: 40%; } }
+    width: 40%; }
+
+  .az-col {
+    width: 50%; }
+
+  .partner-item {
+    width: -webkit-calc( (100% - (1%*3) ) /4);
+    width: calc( (100% - (1%*3) ) /4);
+    height: 69px;
+    float: left;
+    background: #fff;
+    margin-right: 1%;
+    border: 1px solid #2980b9;
+    border-radius: 4px;
+    margin-bottom: 10px; }
+    .partner-item img {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+
+  .partner-item:nth-child(4) {
+    margin-right: 0; }
+
+  .partner-item:nth-child(5) {
+    margin-left: calc( ( (100% - (1%*3) ) /4 ) /2 ); } }
 /**/
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -966,10 +1004,54 @@ h1 {
   .tax-table td, .tax-table th {
     width: 45%; }
   .tax-table td:first-child, .tax-table th:first-child {
-    width: 55%; } }
+    width: 55%; }
+
+  .easy-start-text {
+    font-size: 32px; }
+
+  .steps-subtitle {
+    line-height: 35px; }
+
+  .partner-item {
+    width: -webkit-calc( (100% - (1%*1) ) /2);
+    width: calc( (100% - (1%*1) ) /2);
+    height: 69px;
+    float: left;
+    background: #fff;
+    margin-right: 1%;
+    border: 1px solid #2980b9;
+    border-radius: 4px;
+    margin-bottom: 10px; }
+    .partner-item img {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+
+  .partner-item:nth-child(2n) {
+    margin-right: 0; }
+
+  .partner-item:nth-child(5) {
+    margin-left: 0; }
+
+  .partner-item:nth-child(7) {
+    margin-left: calc( ( (100% - (1%*1) ) /2 ) /2 ); }
+
+  .for-free {
+    background-size: cover; }
+
+  .footer {
+    height: auto;
+    padding-bottom: 15px; }
+    .footer div[class^="col"] {
+      text-align: center; } }
 /**/
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  body {
+    font-size: 22px; }
+
   .block1 {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -1009,7 +1091,30 @@ h1 {
       position: absolute;
       width: 100%;
       left: 0px;
-      display: table; } }
+      display: table; }
+
+  .az-col {
+    width: 100%; }
+
+  .az-col:last-child, .az-col:nth-last-child(2) {
+    width: 100%; }
+
+  .tech-content {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-left: 0; }
+
+  .tech-img {
+    display: block;
+    border: none;
+    margin: 0 auto 10px; }
+
+  .ff-item-text {
+    padding-left: 15px;
+    padding-right: 15px; }
+    .ff-item-text br {
+      display: none; } }
 /*mobile*/
 
 /*# sourceMappingURL=style.css.map */
