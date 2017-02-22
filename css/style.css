@@ -320,7 +320,7 @@ h1 {
   position: relative; }
 
 .az-top::after {
-  content: "топ";
+  content: "╤В╨╛╨┐";
   position: absolute;
   width: 43px;
   height: 43px;
@@ -667,7 +667,7 @@ h1 {
   margin: 0 auto; }
 
 .az-form-popup {
-  width: 280px;
+  max-width: 280px;
   margin: 20px auto; }
 
 .popup-title {
@@ -1113,7 +1113,13 @@ h1 {
     padding-left: 15px;
     padding-right: 15px; }
     .ff-item-text br {
-      display: none; } }
+      display: none; }
+
+  .popup-title br {
+    display: none; }
+
+  .popup {
+    padding: 25px 15px; } }
 /*mobile*/
 
 /*# sourceMappingURL=style.css.map */
