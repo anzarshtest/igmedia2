@@ -16,11 +16,22 @@ $(document).ready(function(){
             
             midClick: true,
             removalDelay: 300,
-            mainClass: 'my-mfp-slide-bottom'
+            mainClass: 'my-mfp-slide-bottom',
+            callbacks: {
+			    open: function() {
+			    	$('.popup-with-move-anim').click(function(){
+			        	$($(this).attr("href")).find(".phone").mask("+ 7 ( 999 ) 999 99 99?");
+			        });
+			      // Will fire when this exact popup is opened
+			      // this - is Magnific Popup object
+			    },
+			    close: function() {
+			      // Will fire when popup is closed
+			    }
+			    // e.t.c.
+			  }
         });
-        $('.popup-with-move-anim').click(function(){
-        	$($(this).attr("href")).find(".phone").mask("+ 7 ( 999 ) 999 99 99?");
-        });
+        
     /*popup*/
 
     /*ajax send*/
