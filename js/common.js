@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
-    $(".phone").mask("+ 7 ( 999 ) 999 99 99?");
+	// $('.phone_us').mask('(000) 000-0000');
+    $(".phone").mask("+ 7 ( 000 ) 000 00 00");
 
     /*popup*/
         $('.popup-with-move-anim').magnificPopup({
