@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    // $(".phone").mask("+ 7 ( 999 ) 999 99 99?");
+    $(".phone").mask("+ 7 ( 999 ) 999 99 99?");
 
     /*popup*/
         $('.popup-with-move-anim').magnificPopup({
@@ -16,22 +16,11 @@ $(document).ready(function(){
             
             midClick: true,
             removalDelay: 300,
-            mainClass: 'my-mfp-slide-bottom',
-            callbacks: {
-			    open: function() {
-			    	$('.popup-with-move-anim').click(function(){
-			        	$($(this).attr("href")).find(".phone").mask("+ 7 ( 999 ) 999 99 99?");
-			        });
-			      // Will fire when this exact popup is opened
-			      // this - is Magnific Popup object
-			    },
-			    close: function() {
-			      // Will fire when popup is closed
-			    }
-			    // e.t.c.
-			  }
+            mainClass: 'my-mfp-slide-bottom'
         });
-        
+        // $('.popup-with-move-anim').click(function(){
+        // 	$($(this).attr("href")).find(".phone").mask("+ 7 ( 999 ) 999 99 99?");
+        // });
     /*popup*/
 
     /*ajax send*/
@@ -52,6 +41,7 @@ $(document).ready(function(){
     $('.az-send').submit(function(){
         var uname = $(this).find('input[name="uname"]');
         var tel = $(this).find('input[name="tel"]');
+        alert(tel.val());
         var empty = false;
         var az_this = $(this);
         reg_tel = /^((8|\+ 7 )[\- ]?)?(\( ?\d{3} \) ?[\- ]?)?[\d\- ]{7,13}$/
