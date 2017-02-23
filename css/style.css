@@ -64,7 +64,7 @@ h1{font-family:'arialnarrowbold';font-size:60px;color:#ecf0f1;line-height:70px;t
 .tax-table td{padding:3px 5px;}
 .tax-table tr:last-child td{padding:7px 5px;}
 .az-top{background:#2980b9;color:#fff;position:relative;}
-.az-top::after{content:"╤В╨╛╨┐";position:absolute;width:43px;height:43px;border-radius:50%;background:#e74c3c;text-transform:uppercase;text-align:center;font-size:13px;top:-27px;right:-20px;line-height:43px;}
+.az-top::after{content:"топ";position:absolute;width:43px;height:43px;border-radius:50%;background:#e74c3c;text-transform:uppercase;text-align:center;font-size:13px;top:-27px;right:-20px;line-height:43px;}
 .undertable{color:#fff;}
 .undertable strong{font-weight:0;color:#e74c3c;}
 .az-margin-top22{margin-top:22px;}
