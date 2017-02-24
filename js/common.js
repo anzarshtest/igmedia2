@@ -58,11 +58,10 @@ $(document).ready(function(){
     $('.az-send').submit(function(){
         var uname = $(this).find('input[name="uname"]');
         var tel = $(this).find('input[name="tel"]');
-        alert(tel.val());
         var empty = false;
         var az_this = $(this);
         reg_tel = /^((8|\+ 7 )[\- ]?)?(\( ?\d{3} \) ?[\- ]?)?[\d\- ]{7,13}$/
-        if (!reg_tel.test(tel.val())){
+        if (tel.val().length!=21&&!reg_tel.test(tel.val())){
             empty = true;
         }
         if(uname.val() == ''){
@@ -197,17 +196,17 @@ $(document).ready(function(){
         }
     });
     var az_tax_table_tr_fch_th_tax_tr_td = $(".tax-table tr:first-child th, .tax-table tr td");
-    az_window.resize(function(){
-        th_visible = 0;
-        th_active = 1;
-        az_taxtable_tr_fth_th.each(function(i){
-            if($(this).is(":visible")){
-                th_visible++;
-            }
+    // az_window.resize(function(){
+    //     th_visible = 0;
+    //     th_active = 1;
+    //     az_taxtable_tr_fth_th.each(function(i){
+    //         if($(this).is(":visible")){
+    //             th_visible++;
+    //         }
 
-        });
-        az_tax_table_tr_fch_th_tax_tr_td.removeClass("az-hide").removeClass("az-td-visible");
-    });
+    //     });
+    //     az_tax_table_tr_fch_th_tax_tr_td.removeClass("az-hide").removeClass("az-td-visible");
+    // });
 
     $(".table-left").click(function(){
         if(th_active>1){
