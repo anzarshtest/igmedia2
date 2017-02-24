@@ -217,6 +217,10 @@ $(document).ready(function(){
                 $(this).find("th").eq(th_active+th_visible-2).addClass("az-hide").removeClass("az-td-visible");//hide();
             });
             th_active--;
+            $(".table-right").fadeIn();
+            if(th_active == 1){
+                $(this).fadeOut();
+            }
         }
         return false;
     });
@@ -230,6 +234,10 @@ $(document).ready(function(){
                 $(this).find("th").eq(th_active+th_visible-1).removeClass("az-hide").addClass("az-td-visible");//.show();
             });
             th_active++;
+            $(".table-left").fadeIn();
+            if((th_active+th_visible-1) == az_taxtable_tr_fth_th.length){
+                $(this).fadeOut();
+            }
         }
         return false;
     });
