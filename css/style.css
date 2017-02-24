@@ -1115,6 +1115,8 @@ h1 {
     display: block;
     border: none;
     margin: 0 auto 10px; }
+    .tech-img img {
+      width: 80%; }
 
   .ff-item-text {
     padding-left: 15px;
