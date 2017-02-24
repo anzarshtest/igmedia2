@@ -1,6 +1,22 @@
 $(document).ready(function(){
 
 	// $('.phone_us').mask('(000) 000-0000');
+	// $.jMaskGlobals = {
+	//     maskElements: 'input,td,span,div',
+	//     dataMaskAttr: '*[data-mask]',
+	//     dataMask: true,
+	//     watchInterval: 300,
+	//     watchInputs: true,
+	//     watchDataMask: false,
+	//     byPassKeys: [9, 16, 17, 18, 36, 37, 38, 39, 40, 91],
+	//     translation: {
+	//         '0': {pattern: /\d/},
+	//         '9': {pattern: /\d/, optional: true},
+	//         '#': {pattern: /\d/, recursive: true},
+	//         'A': {pattern: /[a-zA-Z0-9]/},
+	//         'S': {pattern: /[a-zA-Z]/}
+	//     }
+	//   };
     $(".phone").mask("+ 7 ( 000 ) 000 00 00");
 
     /*popup*/
