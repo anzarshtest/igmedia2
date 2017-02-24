@@ -952,6 +952,13 @@ h2{
 	.tech-item-outer{
 		width: 100%;
 	}
+  .az-top::after{
+    width: 43px;
+    height: 43px;
+    top: -27px;
+    right: unset;
+    left: -20px;
+  }
 }
 	
 
@@ -1110,7 +1117,7 @@ h2{
 		line-height: 34px;
 	}
 	h2{
-		font-size: 22px;
+		font-size: 30px;
 		line-height: 34px;
 	}
 
@@ -1197,9 +1204,7 @@ h2{
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px){
-	h2{
-		font-size: 30px;
-	}
+
 	body{
 		// font-family: 'arialnarrow';
 		// line-height: 1;
@@ -1293,13 +1298,7 @@ h2{
 	.popup{
 		padding: 25px 15px;
 	}
-  .az-top::after{
-      width: 43px;
-      height: 43px;
-      top: -27px;
-      right: unset;
-      left: -20px;
-  }
+
 }
 
 

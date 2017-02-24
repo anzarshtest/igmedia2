@@ -850,7 +850,14 @@ h1 {
     width: 50%; }
 
   .tech-item-outer {
-    width: 100%; } }
+    width: 100%; }
+
+  .az-top::after {
+    width: 43px;
+    height: 43px;
+    top: -27px;
+    right: unset;
+    left: -20px; } }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   .menu {
@@ -980,7 +987,7 @@ h1 {
     line-height: 34px; }
 
   h2 {
-    font-size: 22px;
+    font-size: 30px;
     line-height: 34px; }
 
   .videoWrapper {
@@ -1055,9 +1062,6 @@ h1 {
 /**/
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  h2 {
-    font-size: 30px; }
-
   .block1 {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -1122,14 +1126,7 @@ h1 {
     display: none; }
 
   .popup {
-    padding: 25px 15px; }
-
-  .az-top::after {
-    width: 43px;
-    height: 43px;
-    top: -27px;
-    right: unset;
-    left: -20px; } }
+    padding: 25px 15px; } }
 /*mobile*/
 
 /*# sourceMappingURL=style.css.map */
